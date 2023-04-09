@@ -1,0 +1,80 @@
+/* This css style guide is inspired by http://futuregadget-lab.com/ */
+body {
+    background-color: #1a073e;
+    align-content: center;
+    text-align:center
+}
+
+header {
+    padding: 20px;
+    width: 100%;
+}
+
+h1 {
+    color: limegreen;
+}
+
+h2 {
+    color: #FF0
+}
+
+h3 {
+    color: #F00
+}
+
+h4 {
+    color: #F0F;
+}
+
+h6 {
+    color: #FFF;
+}
+
+footer {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%
+}
+
+.card {
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 50%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    text-align: center;
+    color: #FF0;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.card-content {
+    padding: 2px 16px;
+    color: #FFF;
+}
+
+#navbar {
+    overflow: hidden;
+    border-bottom: solid 15px #15013d;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: #FF0;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: black;
+    color: blue;
+}
