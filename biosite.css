@@ -2,12 +2,23 @@
 body {
     background-color: #1a073e;
     align-content: center;
-    text-align:center
+    text-align:center;
 }
 
 header {
-    padding: 20px;
+    /* background-color: #1a073e;
     width: 100%;
+    height: 50px;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    z-index: 1; */
+}
+
+img {
+    max-width: 480px;
+    max-height: 280px;
 }
 
 h1 {
@@ -30,30 +41,26 @@ h6 {
     color: #FFF;
 }
 
-table {
-    border: 1px solid yellow;
-    padding: 20px;
-    float: left;
-    text-align: left;
-    table-layout: fixed;
-}
-
 footer {
     color: white;
-    position: absolute;
+    background-color: #1a073e;
+    position: fixed;
     bottom: 0;
-    width: 100%
+    width: 100%;
+    height: 50px;
+    z-index: 1;
 }
 
 .card {
     margin: auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
     transition: 0.3s;
     width: 50%;
+    padding-bottom: 25px;
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
 }
 
 .card-title {
@@ -68,30 +75,60 @@ footer {
     color: #FFF;
 }
 
-#navbar {
-    overflow: hidden;
-    border-bottom: solid 15px #15013d;
+.wrapper {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
-#navbar a {
+.one {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1; 
+}
+
+.two {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.three {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#navbar {
+    background-color: #1a073e;
+    border-bottom: solid 10px #15013d;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+#menu a {
     float: left;
     display: block;
     color: #FF0;
     text-align: center;
-    padding: 14px 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
     text-decoration: none;
 }
 
-#navbar a:hover {
+#menu div a:hover {
     background-color: black;
     color: blue;
 }
 
-.left-column {
-    width:30%;
-    float: left;
-}
-
-.right-column {
-    margin-left:30%;
+#container {
+    display: block;
+    margin-top: 100px;
+    position: absolute;
 }
