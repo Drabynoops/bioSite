@@ -5,17 +5,6 @@ body {
     text-align:center;
 }
 
-header {
-    /* background-color: #1a073e;
-    width: 100%;
-    height: 50px;
-    position: fixed;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    z-index: 1; */
-}
-
 img {
     max-width: 480px;
     max-height: 280px;
@@ -122,9 +111,9 @@ footer {
     text-decoration: none;
 }
 
-#menu div a:hover {
+#menu a:hover {
     background-color: black;
-    color: blue;
+    color: #F00;
 }
 
 #container {
